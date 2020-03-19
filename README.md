@@ -19,6 +19,7 @@
 * HTML
 * CSS
 * Javascript
+* PHP
 
 ## Fonctionnalités 
 
