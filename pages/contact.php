@@ -5,15 +5,14 @@
     <title>Contact</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/headers.css">
-    <link rel="stylesheet" href="assets/maincontact.css">
-    <link rel="stylesheet" href="assets/nav-index.css">
-    <link rel="stylesheet" href="assets/footer.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="/assets/css/headers.css">
+    <link rel="stylesheet" href="/assets/css/maincontact.css">
+    <link rel="stylesheet" href="/assets/css/nav-index.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Contact</title>
 </head>
-    <?php include('layouts/navbar.php');?>
+    <?php include('../layouts/navbar.php');?>
         <div id="baner" class="contact">
             <h1 class="tit_contactde">CONTACT</h1>
             <h1 class="tit_contactmo">CONTACT ME</h1>
@@ -39,7 +38,7 @@
         </div>
     </main>
     <!-- FIN DU FORMULAIRE -->
-        <?php include('layouts/footer.php');?>
+        <?php include('../layouts/footer.php');?>
 
 </body>
 

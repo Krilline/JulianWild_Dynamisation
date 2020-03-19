@@ -12,7 +12,7 @@
     <title>Biography</title>
 </head>
 
-    <?php include('layouts/navbar.php');?>
+    <?php include('../layouts/navbar.php');?>
         <div id="baner" class="bio">
             <div id="julspace"></div>
             <img class="biocircle"
@@ -43,7 +43,7 @@
         </div>
         <div class="ipad">
             <div class="conteneur">
-                <img src="main-biography/Lémurien1.jpg" alt="Lémurien">
+                <img src="/assets/main-biography/Lémurien1.jpg" alt="Lémurien">
                 <div class="skills">
                     Photographer
                 </div>
@@ -53,7 +53,7 @@
                     I developed a real passion for photography and now I want to share it with people !</p>
             </div>
             <div class="conteneur">
-                <img src="main-biography/Lémurien3.jpg" alt="Lémurien">
+                <img src="/assets/main-biography/Lémurien3.jpg" alt="Lémurien">
                 <div class="skills">
                     Passionate
                 </div>
@@ -65,7 +65,7 @@
 
             </div>
             <div class="conteneur">
-                <img src="main-biography/Lémurien2.jpg" alt="Lémurien">
+                <img src="/assets/main-biography/Lémurien2.jpg" alt="Lémurien">
                 <div class="skills">
                     Professional
                 </div>
@@ -81,7 +81,7 @@
                 <div class="skills">
                     Photographer
                 </div>
-                <img src="main-biography/Lémurien1.jpg" alt="Lémurien">
+                <img src="/assets/main-biography/Lémurien1.jpg" alt="Lémurien">
                 <p class="p1">Hey, like you can see I’m not the typical type of guy you see with a camera! I love to
                     travel in America, especially in the South. Born and raised by all my brothers and sisters, a
                     tourist left his camera near our stash. Since that day
@@ -92,7 +92,7 @@
                     my dream when I was younger and now it became reality. It’s a pleasure to have this opportunity and
                     to share it with you.
                 </p>
-                <img src="main-biography/Lémurien3.jpg" alt="Lémurien">
+                <img src="/assets/main-biography/Lémurien3.jpg" alt="Lémurien">
                 <div class="skills">
                     Passionate
                 </div>
@@ -101,14 +101,14 @@
                 <div class="skills">
                     Professional
                 </div>
-                <img src="main-biography/Lémurien2.jpg" alt="Lémurien">
+                <img src="/assets/main-biography/Lémurien2.jpg" alt="Lémurien">
                 <p class="p1">Have fun browsing my site, made with all my little hear!
                 </p>
             </div>
         </div>
     </main>
 
-        <?php include('layouts/footer.php');?>
+        <?php include('../layouts/footer.php');?>
 
 </body>
 

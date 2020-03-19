@@ -7,7 +7,7 @@
                 <span></span>
                 <span></span>
                 <ul class="topbar-menu">
-                    <li><a href="/pages/index.php" class="photograph">Julian Wild</a></li>
+                    <li><a href="/index.php" class="photograph">Julian Wild</a></li>
                     <li class="country"><a href="#">Country ></a>
                         <ul>
                             <li><a href="/pages/brasil.php">Brasil</a></li>
@@ -24,7 +24,7 @@
                 </ul>
             </div>
             <div class="julian">
-                <a href="/pages/index.php">JW</a>
+                <a href="/index.php">JW</a>
             </div>
             <div class="social">
                 <a href="#" title="Instagram"><img src="/assets/Logos/instagram.svg" width="25px" height="25px"></a>
@@ -32,7 +32,7 @@
             </div>
         </nav>
         <nav class="nav-bar">
-            <a href="/pages/index.php" class="photograph">Julian Wild</a>
+            <a href="/index.php" class="photograph">Julian Wild</a>
             <div class="scrol">
                 <li class="country"><a href="#">Country</a>
                     <ul>

@@ -12,7 +12,7 @@
     <title>Peru</title>
 </head>
 
-    <?php include('layouts/navbar.php');?>
+    <?php include('../layouts/navbar.php');?>
         <div id="baner" class="peru">
             <h1>PERU</h1>
         </div>
@@ -29,40 +29,40 @@
         </div>
         <div class="container">
             <figure class="container1">
-                <img src="ImagesPages/peru_resized/image01.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
+                <img src="/assets/ImagesPages/peru_resized/image01.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
             </figure>
             <figure class="container1">
-                <img src="ImagesPages/peru_resized/image02.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
+                <img src="/assets/ImagesPages/peru_resized/image02.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
             </figure>
             <figure class="container1">
-                <img src="ImagesPages/peru_resized/image03.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
+                <img src="/assets/ImagesPages/peru_resized/image03.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
             </figure>
             <figure class="container1">
-                <img src="ImagesPages/peru_resized/image04.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
+                <img src="/assets/ImagesPages/peru_resized/image04.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
             </figure>
             <figure class="container1">
-                <img src="ImagesPages/peru_resized/image05.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
+                <img src="/assets/ImagesPages/peru_resized/image05.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
             </figure>
             <figure class="container1">
-                <img src="ImagesPages/peru_resized/image06.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
+                <img src="/assets/ImagesPages/peru_resized/image06.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
             </figure>
             <figure class="container1">
-                <img src="ImagesPages/peru_resized/image07.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
+                <img src="/assets/ImagesPages/peru_resized/image07.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
             </figure>
             <figure class="container1">
-                <img src="ImagesPages/peru_resized/image08.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
+                <img src="/assets/ImagesPages/peru_resized/image08.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
             </figure>
             <figure class="container1">
-                <img src="ImagesPages/peru_resized/image09.jpg" alt="...1x" onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
+                <img src="/assets/ImagesPages/peru_resized/image09.jpg" alt="...1x" onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
             </figure>
             <figure class="container1">
-                <img src="ImagesPages/peru_resized/image10.jpg" alt="...1" onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
+                <img src="/assets/ImagesPages/peru_resized/image10.jpg" alt="...1" onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
             </figure>
             <figure class="container1">
-                <img src="ImagesPages/peru_resized/image11.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
+                <img src="/assets/ImagesPages/peru_resized/image11.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
             </figure>
             <figure class="container1">
-                <img src="ImagesPages/peru_resized/image12.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
+                <img src="/assets/ImagesPages/peru_resized/image12.jpg" alt="..." onclick="onClick(this)" class="modal-hover-opacity img-gallery" />
             </figure>
             <div id="modal01" class="modal" onclick="this.style.display='none'">
                 <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -71,7 +71,7 @@
                 </div>
             </div>
     </main>
-        <?php include('layouts/footer.php');?>
+        <?php include('../layouts/footer.php');?>
     <script>
         function onClick(element) {
             document.getElementById("img01").src = element.src;
