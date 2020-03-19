@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: "roboto";
-    src: url("Fonts/roboto/Roboto-Regular.ttf")
+    src: url("/assets/Fonts/roboto/Roboto-Regular.ttf")
 }
 
 @font-face {
     font-family: "rambler";
-    src: url("Fonts/the_rambler/The\ Rambler.ttf")
+    src: url("/assets/Fonts/the_rambler/The\ Rambler.ttf")
 }
 
 .bloc-menu {
