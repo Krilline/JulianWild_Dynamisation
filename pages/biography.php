@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <?php
+        $sisters = 80;
+        $brothers = 124;
+        function totalFamily($sisters, $brothers){
+            return ($brothers + $sisters);
+        }
+    ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +30,7 @@
 
     </header>
     <main>
+        <h2 class="skills">A total of <?php echo totalFamily($sisters, $brothers);?> brothers and sisters in my family !</h2>
         <div class="responsive">
             <h2 class="skills">Photographer</h2>
             <p>Hey, like you can see I’m not the typical type of guy you see with a camera!

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <?php
+        $kilometerBrasil = 8900;
+    ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +20,7 @@
         </div>
     </header>
     <main>
+        <h2 class="title-country"><?php echo $kilometerBrasil?> Kilometers spent in Brasil !</h2>
         <div class="text">
             <h2 id="text1" class="title-country">Quick story</h2>
             <p id="text2" class="text-country">An old Portuguese colony in the middle of South America, located next to Venezuela and Colombia, Brazil is considered an advanced emerging economy. Well known for his famous carnival at Rio, it got a lot of cultural diversity, mixing a lot

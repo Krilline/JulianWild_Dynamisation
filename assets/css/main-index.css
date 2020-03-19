@@ -26,6 +26,11 @@ strong {
   transition: all 400ms ease;
 }
 
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+}
+
 .image {
   width: 100%;
   display: block;
