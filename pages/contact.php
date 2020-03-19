@@ -22,7 +22,7 @@
     <!-- FORMULAIRE -->
     <main>
         <div class="formulairediv">
-            <form method="GET" action="thankyou.html">
+            <form method="GET" action="thankyou.php">
                 <input type="text" name="first" id="first" class="form" placeholder="First name" required>
                 <br>
                 <input type="text" name="last" id="last" class="form" placeholder="Last name" required>
