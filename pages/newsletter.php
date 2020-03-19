@@ -9,61 +9,7 @@
     <title>Thank you!</title>
 </head>
 
-<body>
-    <header>
-        <nav class="menu-burger">
-            <div class="topbar">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul class="topbar-menu">
-                    <li><a href="index.html" class="photograph">Julian Wild</a></li>
-                    <li class="country"><a href="#">Country ></a>
-                        <ul>
-                            <li><a href="brasil.html">Brasil</a></li>
-                            <hr>
-                            <li><a href="chile.html">Chile</a></li>
-                            <hr>
-                            <li><a href="mexico.html">Mexico</a></li>
-                            <hr>
-                            <li><a href="peru.html">Peru</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="biography.html">Biography</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="julian">
-                <a href="index.html">JW</a>
-            </div>
-            <div class="social">
-                <a href="#" title="Instagram"><img src="Logos/instagram.svg" width="25px" height="25px"></a>
-                <a href="#" title="Pinterest"><img src="Logos/pinterest.svg" width="25px" height="25px"></a>
-            </div>
-        </nav>
-        <nav class="nav-bar">
-            <a href="index.html" class="photograph">Julian Wild</a>
-            <div class="scrol">
-                <li class="country"><a href="#">Country</a>
-                    <ul>
-                        <li><a href="brasil.html">Brasil</a></li>
-                        <hr>
-                        <li><a href="chile.html">Chile</a></li>
-                        <hr>
-                        <li><a href="mexico.html">Mexico</a></li>
-                        <hr>
-                        <li><a href="peru.html">Peru</a></li>
-                    </ul>
-                </li>
-            </div>
-            <a href="biography.html">Biography</a>
-            <a href="contact.html">Contact</a>
-            <div class="social">
-                <a href="#" title="Instagram"><img src="Logos/instagram.svg" width="25px" height="25px"></a>
-                <a href="#" title="Pinterest"><img src="Logos/pinterest.svg" width="25px" height="25px"></a>
-            </div>
-        </nav>
+    <?php include('layouts/navbar.php');?>
     </header>
     <h3>Thank you! You will now receive news from me via Email!</h3>
 </body>
