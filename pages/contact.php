@@ -23,9 +23,9 @@
     <main>
         <div class="formulairediv">
             <form method="GET" action="thankyou.php">
-                <input type="text" name="first" id="first" class="form" placeholder="First name" required>
+                <input type="text" name="firstname" id="firstname" class="form" placeholder="First name" required>
                 <br>
-                <input type="text" name="last" id="last" class="form" placeholder="Last name" required>
+                <input type="text" name="lastname" id="lastname" class="form" placeholder="Last name" required>
                 <br>
                 <input type="email" name="email" id="email" class="form" placeholder="Email" required>
                 <br>
@@ -38,8 +38,8 @@
         </div>
     </main>
     <!-- FIN DU FORMULAIRE -->
-        <?php include('../layouts/footer.php');?>
 
+        <?php include('../layouts/footer.php');?>
 </body>
 
 

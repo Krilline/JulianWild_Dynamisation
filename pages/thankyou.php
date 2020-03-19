@@ -11,7 +11,13 @@
 
     <?php include('../layouts/navbar.php');?>
     </header>
-    <h3>Thank you! Your message was succesfully sent!</h3>
+    <h3>
+        <?php echo "<u>Your firstname :</u> ".$_GET['firstname'].'<br>'; ?>
+        <?php echo "<u>Your lastname :</u> ".$_GET['lastname'].'<br>'; ?>
+        <?php echo "<u>Your email :</u> ".$_GET['email'].'<br>'; ?>
+        <?php echo "<u>Your message :</u> ".$_GET['message'].'<br>'.'<br>'; ?>
+        <?php echo "<em>Thank you, your message was successfully sent !</em>"; ?>
+    </h3>
 </body>
 
 </html>
