@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php
-        $kilometerChile = 455;
-        $kilometerBrasil = 8900;
-        $kilometerPeru = 4980;
-        $kilometerMexico = 1568;
-        $dateOnGallery = date("m /j /Y");
-        $fakeDateOnBrasil = "02 /23 /2017";
-        $fakeDateOnChile = "10 /09 /2019";
-        $fakeDateOnPeru = "05 /05 /2018";
-        $fakeDateOnMexico = "08 /14 /2016";
-        function totalKilometerSpent($kilometerBrasil, $kilometerChile, $kilometerMexico, $kilometerPeru){
-            return ($kilometerPeru + $kilometerMexico + $kilometerChile + $kilometerBrasil);
-        }
+        require('controller/controller.php');
     ?> 
 
 <head>
@@ -39,8 +28,8 @@
 
     <main>
         <h1 class="featured-galleries">currently featured <strong>galleries</strong> on 
-        <?php echo $dateOnGallery.'<br>'.'<br>'; ?>
-        <?php echo totalKilometerSpent($kilometerBrasil, $kilometerChile, $kilometerMexico, $kilometerPeru); ?>
+        <?php echo getTodayDate().'<br>'.'<br>'; ?>
+        <?php echo getTotalKilometer(); ?>
         Km already spent
 
         </h1>
@@ -51,7 +40,7 @@
                     <div class="overlay">
                         <div class="text-country">BRASIL</div>
                 </a>
-                <p>Visited: <?php echo $fakeDateOnBrasil; ?></p>
+                <p>Visited: <?php echo getRandomDateBrasil(); ?></p>
                 </div>
             </div>
           
@@ -61,7 +50,7 @@
                     <div class="overlay">
                         <div class="text-country">CHILE</div>
                 </a>
-                <p>Visited: <?php echo $fakeDateOnChile; ?></p>
+                <p>Visited: <?php echo getRandomDateChile(); ?></p>
                 </div>
             </div>
 
@@ -71,7 +60,7 @@
                     <div class="overlay">
                         <div class="text-country">MEXICO</div>
                 </a>
-                <p>Visited: <?php echo $fakeDateOnMexico; ?></p>
+                <p>Visited: <?php echo getRandomDateMexico(); ?></p>
                 </div>
             </div>
 
@@ -81,7 +70,7 @@
                     <div class="overlay">
                         <div class="text-country">PERU</div>
                 </a>
-                <p>Visited: <?php echo $fakeDateOnPeru; ?></p>
+                <p>Visited: <?php echo getRandomDatePeru(); ?></p>
                 </div>
             </div>
     </main>

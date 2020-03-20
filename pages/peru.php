@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php
-        $kilometerPeru = 4980;
-    ?>
+        require('../controller/controller.php');
+    ?> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
         </div>
     </header>
     <main>
-        <h2 class="title-country"><?php echo $kilometerPeru?> Kilometers spent in Peru !</h2>
+        <h2 class="title-country"><?php echo getKilometerRandom($randomNumber)?></h2>
         <div class="text">
             <h2 id="text1" class="title-country">Quick story</h2>
             <p id="text2" class="text-country">Located near Colombia and Brazil, The Peru is the 19th largest country in the world and the third largest in South America. It was home of several ancient cultures and by this fact has now a lot of cultural diversity, from Spanish Native to

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php
-        $kilometerMexico = 1568;
-    ?>
+        require('../controller/controller.php');
+    ?> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
     </header>
 
     <main>
-        <h2 class="title-country"><?php echo $kilometerMexico?> Kilometers spent in Mexico !</h2>
+        <h2 class="title-country"><?php echo getKilometerRandom($randomNumber)?></h2>
         <div class="text">
             <h2 id="text1" class="title-country">Quick story</h2>
             <p id="text2" class="text-country">This other country is located near the US border, it’s the fifth largest country in the Americas covering almost 2,000,000 square kilometers. Comprising 31 states plus Mexico city, it is a federation, similar to the united states with their

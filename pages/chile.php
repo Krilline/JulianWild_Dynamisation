@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php
-        $kilometerChile = 455;
-    ?>
+        require('../controller/controller.php');
+    ?> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
         </div>
     </header>
     <main>
-        <h2 class="title-country"><?php echo $kilometerChile?> Kilometers spent in Chile !</h2>
+        <h2 class="title-country"><?php echo getKilometerRandom($randomNumber)?></h2>
         <div class="text">
             <h2 id="text1" class="title-country">Quick story</h2>
             <p id="text2" class="text-country">This Latin country is situated next to Bolivia and Peru, as an old Spanish colony, cultural diversity is really present to in this place. It’s an old dictatorship like Cuba and is now one of the most stable economy and social nations in South
