@@ -12,8 +12,11 @@
     <?php include('../layouts/navbar.php');?>
     </header>
     <h3>
-    <?php echo "<u>Your email :</u> ".$_POST['emailfooter'].'<br>'; ?>
-    Thank you! You will now receive news from me via Email!
+        <?php echo "<u>Your firstname :</u> ".$_POST['firstname'].'<br>'; ?>
+        <?php echo "<u>Your lastname :</u> ".$_POST['lastname'].'<br>'; ?>
+        <?php echo "<u>Your email :</u> ".$_POST['email'].'<br>'; ?>
+        <?php echo "<u>Your message :</u> ".$_POST['message'].'<br>'.'<br>'; ?>
+        <?php echo "<em>Thank you, your message was successfully sent !</em>"; ?>
     </h3>
 </body>
 
