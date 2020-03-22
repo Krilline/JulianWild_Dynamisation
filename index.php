@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php
+        session_start();
         require('controller/controller.php');
     ?> 
 
@@ -14,7 +15,10 @@
     <title>Julian Wild</title>
 </head>
 
-    <?php include('layouts/navbar.php');?>
+    <?php 
+        include('layouts/navbar.php');
+        deleteMessage();
+    ?>
         <div id="slider">
             <figure>
                 <img src="/assets/ImagesPages/landing_resized/image01.jpg" alt="...">

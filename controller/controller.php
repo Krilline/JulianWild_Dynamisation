@@ -47,5 +47,40 @@
         echo date("m /d /Y", $timestamp);
     }
 
+// CONTACT -----------------------------------------------------------------------------------------------
 
+    function contact(){
+        if(isset($_POST)){
+            if(!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['email']) && !empty($_POST['message'])){
+                $_SESSION['alreadyMessaged'] = true;
+                $_SESSION['firstname'] = $_POST['firstname'];
+                $_SESSION['lastname'] = $_POST['lastname'];
+                $_SESSION['email'] = $_POST['email'];
+                $_SESSION['message'] = $_POST['message'];
+                if($_SESSION['alreadyMessaged'] === true){
+                    Header('Location: http://localhost:3000/pages/message.php');
+                }
+        }
+    }
+}
+
+// REDIRECTION TO INDEX WHEN NO MESSAGE SENT ---------------------------------------------------------------
+
+    function redirection(){
+        if(empty($_SESSION['alreadyMessaged']) || $_SESSION['alreadyMessaged'] == false){
+            Header('Location: http://localhost:3000/index.php');
+        }
+    }
+// DELETE MESSAGE ------------------------------------------------------------------------
+
+    function deleteMessage(){
+        if(isset($_POST['delete'])){
+            unset($_SESSION['alreadyMessaged']);
+            unset($_SESSION['firstname']);
+            unset($_SESSION['lastname']);
+            unset($_SESSION['email']);
+            unset($_SESSION['message']);
+            session_destroy();
+        }
+    }
 ?>

@@ -1,7 +1,14 @@
-<?php include('../layouts/head.php');?>
+<?php
+    session_start();
+    include('../layouts/head.php');
+ ?>
     <title>Contact</title>
 </head>
-    <?php include('../layouts/navbar.php');?>
+    <?php 
+        include('../layouts/navbar.php');
+        deleteMessage();
+        contact();
+    ?>
         <div id="baner" class="contact">
             <h1 class="tit_contactde">CONTACT</h1>
             <h1 class="tit_contactmo">CONTACT ME</h1>
@@ -11,16 +18,16 @@
     <!-- FORMULAIRE -->
     <main>
         <div class="formulairediv">
-            <form method="POST" action="message.php">
-                <input type="text" name="firstname" id="firstname" class="form" placeholder="First name" required>
+            <form method="POST">
+                <input type="text" name="firstname" id="firstname" class="form" placeholder="First name">
                 <br>
-                <input type="text" name="lastname" id="lastname" class="form" placeholder="Last name" required>
+                <input type="text" name="lastname" id="lastname" class="form" placeholder="Last name">
                 <br>
-                <input type="email" name="email" id="email" class="form" placeholder="Email" required>
+                <input type="email" name="email" id="email" class="form" placeholder="Email">
                 <br>
-                <textarea name="message" id="message" placeholder="Message" required></textarea>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
                 <br>
-                <button class="button-contact">Send</button>
+                <button class="button-contact" type="submit" name="send">Send</button>
                 <br>
                 <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox">Sign up to the newsletter</label>
             </form>
