@@ -13,11 +13,7 @@
 	}
 
 
-	#baner.brasil{background: no-repeat center center / cover url("/assets/ImagesPages/title_resized/dessert-74568_1920.jpg");}
-	#baner.chile{background: no-repeat center center / cover url("/assets/ImagesPages/title_resized/chile-693065.jpg");}
-	#baner.mexico{background: no-repeat center center / cover url("/assets/ImagesPages/title_resized/landscape-695030.jpg");}
-	#baner.peru{background: no-repeat center center / cover url("/assets/ImagesPages/title_resized/peru-2532604.jpg");}
-	#baner.contact, #baner.bio{background-color: #009DA5;}
+	#baner.contact{background-color: #009DA5;}
 
 	
 	h1{ display: table-cell; vertical-align: middle;
@@ -34,7 +30,7 @@
 		}
 
 
-	h1.tit_biomo, h1.tit_contactmo{display: none;}
+	h1.tit_contactmo{display: none;}
 
 
 
@@ -49,12 +45,6 @@
 							width:100%;
 							height:350px;
 							display: table;
-						}
-
-
-					#baner.bio{
-						display: table;
-						position: relative;
 						}
 
 
@@ -74,18 +64,8 @@
 						}
 
 
-					h1.tit_biode, h1.tit_contactde{
+			h1.tit_contactde{
 						display: none;
-						}
-
-
-			h1.tit_biomo{
-						display: table-cell; vertical-align: middle;
-						color: white;
-						width: 300px;
-						text-align: left;
-						padding-top: 10%; 
-						padding-left: 3%;			
 						}
 
 

@@ -5,7 +5,7 @@
         </div>
         <div class="contact-footer">
             <p class="newsletter-footer">Newsletter</p>
-            <form method="POST" action="pages/newsletter.php">
+            <form method="POST" action="newsletter.php">
                 <input class="email-footer" type="email" name="emailfooter" placeholder="email@contact.com" required>
                 <button class="button-footer" name="button">Send</button>
             </form>

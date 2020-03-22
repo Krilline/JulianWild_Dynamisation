@@ -5,7 +5,7 @@
   padding: 0 auto;
 }
 
-/* UNIQUEMENT POUR GET */
+/* UNIQUEMENT POUR POST */
 h3{
   text-align: center;
   padding: 100px;
@@ -13,7 +13,7 @@ h3{
   color: #141414;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* UNIQUEMENT POUR GET */
+/* UNIQUEMENT POUR POST */
 
 .formulairediv{
   width: 100%;

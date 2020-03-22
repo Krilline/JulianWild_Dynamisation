@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/maincontact.css">
-    <link rel="stylesheet" href="/assets/css/nav-index.css">
-    <title>Thank you!</title>
+<?php include('../layouts/head.php');?>
+    <title>Message</title>
 </head>
-
     <?php include('../layouts/navbar.php');?>
+        <div id="baner" class="contact">
+            <h1 class="tit_contactde">YOUR MESSAGE</h1>
+            <h1 class="tit_contactmo">MESSAGE</h1>
+        </div>
+    
     </header>
     <h3>
         <?php echo "<u>Your firstname :</u> ".$_POST['firstname'].'<br>'; ?>

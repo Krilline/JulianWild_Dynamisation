@@ -3,18 +3,12 @@
     function getKilometerRandom($randomNumber){
         $randomNumber = rand(100, 1000);
         if($randomNumber > 800){
-            return ("Tibo Inshape mod, ".$randomNumber." kilometers spent in this country 😎");
+            return ("Tibo Inshape mod, ".$randomNumber." kilometers spent today 😎");
         }elseif($randomNumber < 800 && $randomNumber >400){
-            return ("I was in good shape, ".$randomNumber." kilometers spent in this country 😁");
+            return ("I'm was in good shape, ".$randomNumber." kilometers spent today 😁");
         }else {
-            return ("I was so tired, only ".$randomNumber." kilometers spent in this country  😪");
+            return ("I'm so tired, only ".$randomNumber." kilometers spent today 😪");
         }
-    }
-
-//RANDOM TOTAL KILOMETER SPENT -----------------------------------------------------------------------
-
-    function getTotalKilometer(){
-        return rand(1000, 4000);
     }
 
 // DATE TODAY ------------------------------------------------------------------------------
