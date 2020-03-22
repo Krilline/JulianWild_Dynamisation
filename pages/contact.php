@@ -1,13 +1,13 @@
 <?php
     session_start();
     include('../layouts/head.php');
+    contact();
  ?>
     <title>Contact</title>
 </head>
     <?php 
         include('../layouts/navbar.php');
         deleteMessage();
-        contact();
     ?>
         <div id="baner" class="contact">
             <h1 class="tit_contactde">CONTACT</h1>

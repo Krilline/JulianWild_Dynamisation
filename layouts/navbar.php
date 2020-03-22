@@ -8,13 +8,16 @@
                 <span></span>
                 <ul class="topbar-menu">
                     <li><a href="/index.php" class="photograph">Julian Wild</a></li>
-                    <li><a href="/pages/contact.php">Contact</a></li>
-                    <li><a href="/pages/message.php">Message</a></li>
-                    <?php 
+                    <li><a href="/pages/contact.php">Contact Me</a></li>
+                    <?php if(isset($_SESSION['alreadyMessaged']) && $_SESSION['alreadyMessaged'] === true){ 
+                        ?>
+                        <li><a href="/pages/message.php">Your Message</a></li>
+                        <?php } else { echo "";}?>
+                        <?php 
                         if (isset($_SESSION['alreadyMessaged']) && $_SESSION['alreadyMessaged'] === true){
                     ?>
                         <li>
-                            <form action="POST">
+                            <form method="POST">
                                 <button type="submit" name="delete">Delete</button>
                             </form>
                         </li>
@@ -31,13 +34,16 @@
         </nav>
         <nav class="nav-bar">
             <a href="/index.php" class="photograph">Julian Wild</a>
-            <a href="/pages/contact.php">Contact</a>
-            <a href="/pages/message.php">Message</a>
+                <a href="/pages/contact.php">Contact Me</a>
+            <?php if(isset($_SESSION['alreadyMessaged']) && $_SESSION['alreadyMessaged'] === true){ 
+                ?>
+            <a href="/pages/message.php">Your Message</a>
+            <?php } else { echo "";}?>
             <?php 
                         if (isset($_SESSION['alreadyMessaged']) && $_SESSION['alreadyMessaged'] === true){
                     ?>
                         <a>
-                            <form action="POST">
+                            <form method="POST">
                                 <button type="submit" name="delete">Delete</button>
                             </form>
                         </a>

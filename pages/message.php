@@ -1,6 +1,7 @@
 <?php 
     session_start();
     include('../layouts/head.php');
+    redirection();
 ?>
     <title>Message</title>
 </head>
