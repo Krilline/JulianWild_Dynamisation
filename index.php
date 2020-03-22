@@ -35,41 +35,33 @@
         </h1>
         <div class="container">
             <div class="container-country brasil">
-                <a href="/pages/brasil.php">
-                    <img src="/assets/ImagesPages/brazil-resized/image07.jpg" alt="Brasil" class="image">
-                    <div class="overlay">
-                        <div class="text-country">BRASIL</div>
-                </a>
+                <img src="/assets/ImagesPages/brazil_resized/image07.jpg" alt="Brasil" class="image">
+                <div class="overlay">
+                    <div class="text-country">BRASIL</div>
                 <p>Visited: <?php echo getRandomDateBrasil(); ?></p>
                 </div>
             </div>
           
             <div class="container-country chile">
-                <a href="/pages/chile.php">
-                    <img src="/assets/ImagesPages/chile_resizied/image10.jpg" alt="Chile" class="image">
-                    <div class="overlay">
-                        <div class="text-country">CHILE</div>
-                </a>
+                <img src="/assets/ImagesPages/chile_resizied/image10.jpg" alt="Chile" class="image">
+                <div class="overlay">
+                    <div class="text-country">CHILE</div>
                 <p>Visited: <?php echo getRandomDateChile(); ?></p>
                 </div>
             </div>
 
             <div class="container-country">
-                <a href="/pages/mexico.php">
-                    <img src="/assets/ImagesPages/mexico_resized/image07.jpg" alt="Mexique" class="image">
-                    <div class="overlay">
-                        <div class="text-country">MEXICO</div>
-                </a>
+                <img src="/assets/ImagesPages/mexico_resized/image07.jpg" alt="Mexique" class="image">
+                <div class="overlay">
+                    <div class="text-country">MEXICO</div>
                 <p>Visited: <?php echo getRandomDateMexico(); ?></p>
                 </div>
             </div>
 
             <div class="container-country">
-                <a href="/pages/peru.php">
-                    <img src="/assets/ImagesPages/peru_resized/image11.jpg" alt="Peru" class="image">
-                    <div class="overlay">
-                        <div class="text-country">PERU</div>
-                </a>
+                <img src="/assets/ImagesPages/peru_resized/image11.jpg" alt="Peru" class="image">
+                <div class="overlay">
+                    <div class="text-country">PERU</div>
                 <p>Visited: <?php echo getRandomDatePeru(); ?></p>
                 </div>
             </div>
