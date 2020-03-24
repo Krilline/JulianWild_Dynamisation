@@ -18,7 +18,7 @@
                     ?>
                         <li>
                             <form method="POST">
-                                <button type="submit" name="delete">Delete</button>
+                                <button class="button-delete" type="submit" name="delete">Delete</button>
                             </form>
                         </li>
                     <?php } else { echo "";} ?>
@@ -44,7 +44,7 @@
                     ?>
                         <a>
                             <form method="POST">
-                                <button type="submit" name="delete">Delete</button>
+                                <button class="button-delete" type="submit" name="delete">Delete</button>
                             </form>
                         </a>
                     <?php } else { echo "";} ?>

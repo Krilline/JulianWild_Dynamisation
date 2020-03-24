@@ -50,7 +50,7 @@
 // CONTACT -----------------------------------------------------------------------------------------------
 
     function contact(){
-        if(isset($_POST)){
+        if(isset($_POST) && isset($_POST['send'])){
             if(!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['email']) && !empty($_POST['message'])){
                 $_SESSION['alreadyMessaged'] = true;
                 $_SESSION['firstname'] = $_POST['firstname'];
@@ -59,10 +59,10 @@
                 $_SESSION['message'] = $_POST['message'];
                 if($_SESSION['alreadyMessaged'] === true){
                     Header('Location: http://localhost:3000/pages/message.php');
-                }
+                }  
+            }    
         }
-    }
-}
+    }            
 
 // REDIRECTION TO INDEX WHEN NO MESSAGE SENT ---------------------------------------------------------------
 
