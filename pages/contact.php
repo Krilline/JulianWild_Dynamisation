@@ -8,14 +8,16 @@
     <?php 
         include('../layouts/navbar.php');
         deleteMessage();
-        if(empty($_POST['firstname'])){
-            $error['firstname'] = "Le prénom est obligatoire";
-        }if(empty($_POST['lastname'])){
-            $error['lastname'] = "Le nom est obligatoire";
-        }if(empty($_POST['email'])){
-            $error['email'] = "L'email est obligatoire";
-        }if(empty($_POST['message'])){
-            $error['message'] = "Le message est obligatoire";
+        if(isset($_POST) && isset($_POST['send'])){
+            if(empty($_POST['firstname'])){
+                $error['firstname'] = "Le prénom est obligatoire";
+            }if(empty($_POST['lastname'])){
+                $error['lastname'] = "Le nom est obligatoire";
+            }if(empty($_POST['email'])){
+                $error['email'] = "L'email est obligatoire";
+            }if(empty($_POST['message'])){
+                $error['message'] = "Le message est obligatoire";
+            }
         }
     ?>
         <div id="baner" class="contact">
