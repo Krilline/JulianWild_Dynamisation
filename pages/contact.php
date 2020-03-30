@@ -2,13 +2,18 @@
     session_start();
     include('../layouts/head.php');
     contact();
+    //emailSend();
  ?>
     <title>Contact</title>
 </head>
     <?php 
         include('../layouts/navbar.php');
         deleteMessage();
+
+// CONTACT ERROR MESSAGE -------------------------------------------------------------------------
+
         if(isset($_POST) && isset($_POST['send'])){
+            $error = [];
             if(empty($_POST['firstname'])){
                 $error['firstname'] = "Le prénom est obligatoire";
             }if(empty($_POST['lastname'])){
@@ -36,7 +41,7 @@
                 <br>
                 <input type="text" name="lastname" id="lastname" class="form" placeholder="Last name">
                 <br>
-                <code style="color: red"><?php if(isset($error['lastname'])) echo $error['lastname'];?></code>
+                <code style="color: red"><?php if($error['lastname']) echo $error['lastname'];?></code>
                 <br>
                 <input type="email" name="email" id="email" class="form" placeholder="Email">
                 <br>
@@ -56,8 +61,4 @@
 
         <?php include('../layouts/footer.php');?>
 </body>
-
-
-
-
 </html>

@@ -64,6 +64,27 @@
         }
     }            
 
+// CONTACT EMAIL MESSAGE --------------------------------------------------------------------------------
+
+    function emailSend(){
+        if($_SESSION['alreadyMessaged'] === true && isset($_SESSION['alreadyMessaged'])){
+            $to = "krillinee@gmail.com";
+            $from = "andraurelien@yahoo.fr";
+            $firstname = $_POST['firstname'];
+            $lastname = $_POST['lastname'];
+            $email = $_POST['email'];
+            $message = $_POST['message'];
+            $subject = "New message from ".$firstname." ".$lastname." from Julian Wild website.";
+            $content = "The following message was sent : ".$message." with this email : ".$email;
+            $headers = "From:".$from;
+            if(mail($to, $subject, $content, $headers)){
+                echo "your mail was sent";
+            }else {
+                echo "your mail was not sent";
+            }
+        }
+    }
+
 // REDIRECTION TO INDEX WHEN NO MESSAGE SENT ---------------------------------------------------------------
 
     function redirection(){
